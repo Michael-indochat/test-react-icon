@@ -124,6 +124,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                     }
                   >
                     {(handleClick, open) => {
+                      console.log(item);
                       return (
                         <>
                           <a
@@ -142,6 +143,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                           >
                             <div className="flex items-center justify-between">
                               <div className="flex items-center">
+                                {/* 判斷item內有沒有icon 有的才渲染出來 */}
+                                {item?.icon ? <item.icon /> : null}
                                 {/* <svg
                                   className="h-6 w-6 shrink-0"
                                   viewBox="0 0 24 24"

@@ -1,5 +1,7 @@
 // import { MdAccessTime, MdSignalWifi3Bar } from "react-icons/md";
 
+// 一樣import你要的icon 然後直接放進json內 之後到你的Sidebar.jsx的第147行 判斷要渲染的物件內有沒有 icon 這個key。
+import { MdBook, MdTaxiAlert } from "react-icons/md";
 
 const navigationItems = {
   sidebar: [
@@ -14,6 +16,7 @@ const navigationItems = {
       name: "Analysis",
       to: "",
       text: "analysis",
+      icon: MdBook,
       child: [
         {
           name: "Tax Trend",
@@ -32,6 +35,7 @@ const navigationItems = {
       name: "Tax",
       to: "",
       text: "tax",
+      icon: MdTaxiAlert,
       child: [
         {
           name: "Tax Revenue",
